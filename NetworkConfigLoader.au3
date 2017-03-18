@@ -8,7 +8,6 @@
 #include <GUIListBox.au3>
 #include <StaticConstants.au3>
 #include <WindowsConstants.au3>
-#Region ### START Koda GUI section ### Form=C:\Users\CARNET-PERSO\Desktop\NCL\Form1.kxf
 $main = GUICreate("42", 186, 314, 334, 181)
 $next = GUICtrlCreateButton("Next", 8, 136, 81, 25)
 $check = GUICtrlCreateCheckbox("auto", 112, 192, 49, 17)
@@ -25,7 +24,6 @@ $save = GUICtrlCreateButton("Save current", 8, 280, 83, 25)
 $default = GUICtrlCreateButton("Enable DHCP", 8, 168, 81, 25)
 $watchConf = GUICtrlCreateButton("Display config", 96, 168, 83, 25)
 GUISetState(@SW_SHOW)
-#EndRegion ### END Koda GUI section ###
 Global $fileName = "network.conf"
 Global $confFile = FileRead($fileName)
 Global $nbrOfLine = _FileCountLines($fileName)
